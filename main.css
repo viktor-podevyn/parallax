@@ -1,11 +1,12 @@
-.content {
+
+/*.content {
     margin: 0 auto;
     padding-top: 10px;
     text-align: center;
     font-size: 50px;
     z-index: 12;
     position: fixed;
-}
+}*/
 
 .layer {
 position: absolute;
@@ -18,11 +19,14 @@ position: absolute;
     background-repeat: repeat-x;
 }
 
+
 .distantClouds {
     height: 1546px;
     width: 100%;
     background-image: url("img/10_distant_clouds.png");
     background-repeat: repeat-x;
+    transform: translateX(0);
+    animation: distantClouds 100s linear infinite;
 }
 
 .distantClouds1 {
@@ -30,13 +34,18 @@ position: absolute;
     width: 100%;
     background-image: url("img/09_distant_clouds1.png");
     background-repeat: repeat-x;
+    transform: translateX(0);
+    animation: distantClouds1 80s linear infinite;
 }
+
 
 .clouds {
     height: 1546px;
     width: 100%;
     background-image: url("img/08_clouds.png");
     background-repeat: repeat-x;
+    transform: translateX(0);
+    animation: clouds 70s linear infinite;
 }
 
 .hugeClouds {
@@ -44,6 +53,8 @@ position: absolute;
     width: 100%;
     background-image: url("img/07_huge_clouds.png");
     background-repeat: repeat-x;
+    transform: translateX(0);
+    animation: hugeClouds 40s linear infinite;
 }
 
 .hill2 {
@@ -51,6 +62,8 @@ position: absolute;
     width: 100%;
     background-image: url("img/06_hill2.png");
     background-repeat: repeat-x;
+    transform: translateX(0);
+    animation: hill2 50s linear infinite;
 }
 
 .hill1 {
@@ -58,6 +71,8 @@ position: absolute;
     width: 100%;
     background-image: url("img/05_hill1.png");
     background-repeat: repeat-x;
+    transform: translateX(0);
+    animation: hill1 40s linear infinite;
 }
 
 .bushes {
@@ -65,6 +80,7 @@ position: absolute;
     width: 100%;
     background-image: url("img/04_bushes.png");
     background-repeat: repeat-x;
+    transform: translateX(0);
 }
 
 .distantTrees {
@@ -72,6 +88,7 @@ position: absolute;
     width: 100%;
     background-image: url("img/03_distant_trees.png");
     background-repeat: repeat-x;
+    transform: translateX(0);
 }
 
 .tenb {
@@ -79,6 +96,7 @@ position: absolute;
     width: 100%;
     background-image: url("img/02_trees and bushes.png");
     background-repeat: repeat-x;
+    transform: translateX(0);
 }
 
 .ground {
@@ -86,4 +104,5 @@ position: absolute;
     width: 100%;
     background-image: url("img/01_ground.png");
     background-repeat: repeat-x;
+    transform: translateX(0);
 }
