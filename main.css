@@ -26,7 +26,7 @@ position: absolute;
     background-image: url("img/10_distant_clouds.png");
     background-repeat: repeat-x;
     transform: translateX(0);
-    animation: distantClouds 100s linear infinite;
+    animation: distantClouds-shift 100s linear infinite;
 }
 
 .distantClouds1 {
@@ -35,7 +35,7 @@ position: absolute;
     background-image: url("img/09_distant_clouds1.png");
     background-repeat: repeat-x;
     transform: translateX(0);
-    animation: distantClouds1 80s linear infinite;
+    animation: distantClouds1-shift 80s linear infinite;
 }
 
 
@@ -45,7 +45,7 @@ position: absolute;
     background-image: url("img/08_clouds.png");
     background-repeat: repeat-x;
     transform: translateX(0);
-    animation: clouds 70s linear infinite;
+    animation: clouds-shift 70s linear infinite;
 }
 
 .hugeClouds {
@@ -54,7 +54,7 @@ position: absolute;
     background-image: url("img/07_huge_clouds.png");
     background-repeat: repeat-x;
     transform: translateX(0);
-    animation: hugeClouds 40s linear infinite;
+    animation: hugeClouds-shift 40s linear infinite;
 }
 
 .hill2 {
@@ -63,7 +63,7 @@ position: absolute;
     background-image: url("img/06_hill2.png");
     background-repeat: repeat-x;
     transform: translateX(0);
-    animation: hill2 50s linear infinite;
+    animation: hill2-shift 50s linear infinite;
 }
 
 .hill1 {
@@ -72,7 +72,7 @@ position: absolute;
     background-image: url("img/05_hill1.png");
     background-repeat: repeat-x;
     transform: translateX(0);
-    animation: hill1 40s linear infinite;
+    animation: hill1-shift 40s linear infinite;
 }
 
 .bushes {
@@ -81,6 +81,7 @@ position: absolute;
     background-image: url("img/04_bushes.png");
     background-repeat: repeat-x;
     transform: translateX(0);
+    animation: bushes-shift 30s linear infinite;
 }
 
 .distantTrees {
@@ -89,6 +90,7 @@ position: absolute;
     background-image: url("img/03_distant_trees.png");
     background-repeat: repeat-x;
     transform: translateX(0);
+    animation: distantTrees-shift 25s linear infinite;
 }
 
 .tenb {
@@ -97,6 +99,7 @@ position: absolute;
     background-image: url("img/02_trees and bushes.png");
     background-repeat: repeat-x;
     transform: translateX(0);
+    animation: tenb-shift 15s linear infinite;
 }
 
 .ground {
@@ -105,4 +108,93 @@ position: absolute;
     background-image: url("img/01_ground.png");
     background-repeat: repeat-x;
     transform: translateX(0);
+    animation: ground-shift 5s linear infinite;
 }
+
+
+/*@keyframes fly-cycle {
+    100% {
+        background-position: -900px 0;
+    }
+}*/
+@keyframes distantClouds-shift {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 2048px 0;
+    }
+}
+@keyframes distantClouds1-shift {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -2048px 0;
+    }
+}
+@keyframes clouds-shift {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 2048px 0;
+    }
+}
+@keyframes hugeClouds-shift {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -2048px 0;
+    }
+}
+@keyframes hill1-shift {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -2048px 0;
+    }
+}
+@keyframes hill2-shift {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 2048px 0;
+    }
+}
+@keyframes bushes-shift {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -2048px 0;
+    }
+}
+@keyframes distantTrees-shift {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -2048px 0;
+    }
+}
+@keyframes tenb-shift {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -2048px 0;
+    }
+}
+@keyframes ground-shift {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -2048px 0;
+    }
+}
+
