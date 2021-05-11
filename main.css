@@ -1,12 +1,7 @@
-
-/*.content {
-    margin: 0 auto;
-    padding-top: 10px;
-    text-align: center;
-    font-size: 50px;
-    z-index: 12;
-    position: fixed;
-}*/
+:root {
+    --startLeft: 0px;
+    --targetLeft: -2048px;
+}
 
 .layer {
 position: absolute;
@@ -112,6 +107,23 @@ position: absolute;
 }
 
 
+.gif {
+    height: 1546px;
+    width: 100%;
+    background-image: url("img/character.gif");
+    background-repeat: no-repeat;
+    transform: translateY(1000px) translateX(400px);
+}
+
+.gif[direction=ArrowRight] {
+    animation-direction: normal !important;
+}
+
+.gif[direction=ArrowLeft] {
+    animation-direction: reverse !important;
+}
+
+
 /*@keyframes fly-cycle {
     100% {
         background-position: -900px 0;
@@ -198,3 +210,20 @@ position: absolute;
     }
 }
 
+
+.bgNormal {
+    animation-direction: normal !important;
+}
+
+.bgReverse {
+    animation-direction: reverse !important;
+}
+
+@keyframes loader {
+    from {
+        background-position-x: var(--startLeft);
+    }
+    to {
+        background-position-x: var(--targetLeft);
+    }
+}
