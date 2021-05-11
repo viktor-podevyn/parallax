@@ -30,3 +30,4 @@ In this repository you will find some images. If you position them over eachothe
 - Make a short movie, you can stop the scroller or make it go in any direction and add some characters
 
 
+file:///Users/viktorpodevyn/Sites/becode/parallax/index.html
